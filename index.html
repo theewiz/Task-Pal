@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskPal To-Do App</title>
+
+  <link rel="stylesheet" href="todo.css">
+  <link rel="shortcut icon" href="./Starter/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="body">
+
+  <div class="container">
+
+    <!-- header -->
+    <header>
+      <div id="header-left">
+        <h1 class="header-title">Task Pal📝</h1>
+        <p class="header-date">Saturday, July 2</p>
+      </div>
+
+      <div id="header-right">
+        <i class="fa-solid fa-ellipsis icon"></i>
+
+        <div class="theme-changer active">
+          <p>Theme</p>
+
+          <div class="themes ">
+            <button class="theme-colors color-1"></button>
+            <button class="theme-colors color-2"></button>
+            <button class="theme-colors color-3"></button>
+            <button class="theme-colors color-4"></button>
+            <button class="theme-colors color-5"></button>
+            <button class="theme-colors color-6"></button>
+            <button class="theme-colors color-7"></button>
+          </div>
+
+          <div class="app-info">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>App info</span>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="app-info-modal active">
+
+        <div class="app-info-content">
+          <h2>App info</h2>
+
+          <div class="app-details">
+            <p>Version: <span>1.0.0</span></p>
+            <p>Publish: <span>06 May 2023</span></p>
+            <p>Last Update: <span>06 May 2023</span></p>
+            <p>Created by: <span><a href="https://www.linkedin.com/in/wisdom-elendu/" target="_blank">Wisdom
+                  Elendu</a></span></p>
+          </div>
+
+          <button class="app-btn">Ok</button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div id="welcome" class="">
+        <img src="./Starter/assets/calender-image.svg" alt="calender image">
+        <h2>What task would you <br>
+          love to list today?</h2>
+      </div>
+
+
+      <div id="taskList" class="">
+
+      </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+      <div id="footer-input">
+
+        <div class="input-icons">
+          <div class="text-plus ">
+            <i class="fa-regular fa-plus "></i>
+            <span class="input-text">Add task</span>
+          </div>
+
+          <i class="fa-regular fa-circle cir active"></i>
+        </div>
+
+        <input type="text" placeholder="" maxlength="60" class="footer-input">
+
+      </div>
+    </footer>
+
+
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+
+</html>
